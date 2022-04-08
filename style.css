@@ -8,21 +8,84 @@ body{
 header{
     /* background-color: #364552; */
     background-color: rgb(0, 55, 86);
-    color: white;
-    padding: 3rem 2rem;
+     color: white;
+    padding: 2rem 1rem;
         }
 header h1{
     font-size: 4rem;
     text-align: center;
 }
-section article{
+.acordeon {
+    width: auto;
+    margin: 80px auto;
+    /* color: black; */
+    /* background-color: aqua; */
+    padding: 45px 45px;
+  }
+  .acordeon .contenedor {
+    /* background-color: blueviolet; */
+    text-align: left;
+    position: relative;
+    margin:10px 10px;
+    display: inline-block;
+    cursor: pointer;
+
+  }
+
+
+/* section div div{
     transition: box-shadow 0.3s ease;
     background-color: #fff;
     margin: 1rem 0 ;
     border-radius: 0.5rem;
     padding: 0.25rem 0;
     cursor: pointer;
+}  */
+
+/* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+.acordeon .label{
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    /* cursor: pointer; */
 }
-section article:hover{
+
+/*  section div div:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
-}
+} */
+
+
+/*   .acordeon .categoria {
+    position: relative;
+    padding: 10px 0;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+  } */
+  /* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+
+  .acordeon .contenedor::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    font-size: 25px;
+    transform: translateY(-50%);
+  }
+  /* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+
+/* 
+ */
+
+  /* Añade una línea horizontal entre los contenidos */
+
+.acordeon hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+
+
+
