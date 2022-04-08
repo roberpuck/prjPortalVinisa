@@ -1,0 +1,102 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    /* margin: 0; */
+    background-color: white;
+    background-image: url(./img/BLUE_TEXTURE_RGB_A4.jpg);
+    
+    /* background-color:#efefef; */
+}
+header{
+    /* background-color: #364552; */
+    background-color: rgb(0, 55, 86);
+     color: white;s
+    padding: 2rem 1rem;
+        }
+.titulo {
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
+
+.acordeon {
+  width: 300px;
+  margin: 90px auto;
+  color: black;
+  /* background-color: violet; */
+  padding: 45px 45px;
+}
+
+.acordeon .contenedor {
+  position: relative;
+  margin: 10px 2px;
+  /* background-color: blue; */
+ 
+}
+
+.acordeon .contenedor .logo{
+  margin: 4px 4px;
+  width: 180;
+  align-items: center;
+}
+
+.acordeon .contenedor:hover{
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+/* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+
+.acordeon .label {
+  width: 200px;
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+/*  div div label:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+} */
+
+.acordeon .label::before {
+ 
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+
+.acordeon .contenido {
+  
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: medium;
+  text-align: left;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* Muestra la parte de contenido cuando está activa. Establece la altura */
+
+.acordeon .contenedor.activa .contenido {
+  
+  width: auto;
+  height: auto;
+}
+
+/* Cambia de signo positivo a negativo una vez activado */
+
+.acordeon .contenedor.activa .label::before {
+  content: '-';
+  font-size: 30px;
+}
