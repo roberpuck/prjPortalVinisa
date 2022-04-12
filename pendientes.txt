@@ -1,1 +1,6 @@
-acordeon
+funcionamient acordeon
+fuente Amcor
+imagenes una al lado de la otra
+logos en png transparentes (sin letras)
+transicion lenta
+definir logo para cada área
