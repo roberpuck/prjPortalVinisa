@@ -1,43 +1,49 @@
 html{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 body{
-
-    background-color: white;
-    align-items: center;
-
+  background-color: white;
+  align-items: center;
+  text-align: center;
 }
 header{
-    background-color: rgb(0, 55, 86);
-     color: white;
-     align-items: center;
-     text-align: center;
-     width: 100%;
-    /* padding: 2rem 1rem; */
-    display: inline-flex;
+  background-color: rgb(0, 55, 86);
+  color: white;
+  width: 100%;
+  text-align: center;
+  align-items: center;
         }
-.logoHeader{
-  position: relative;
+header .logoHeader{
+  size: 75%;
+  display: inline-block;
+  margin: 0%;
 }
 
-h1 {
-    /* position: absolute; */
-    font-size: 4rem;
-    text-align: center;
-    display: inline-flex;
-    align-items: center;
+header h1 {
+   margin: 0;
+   width: auto;
+   font-size: 4rem;
+   text-align: center;
+   align-items: center;
+      }
 
-}
+
+
 
 .contenedor-acordeones{
-
+  margin: 0, 0;
   text-align: center;
+}
+
+.acordeon-cuerpo{
+  margin: 0%;
+  padding-top: 0%;
 }
 
 /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
 
 .acordeon .contenedor {
- 
+  margin: 0, auto;
   width: 300px;
   height: auto;
   position: relative;
@@ -49,11 +55,12 @@ h1 {
 }
 
 .acordeon {
+  margin: 10%;
   width: 300px;
-  margin: 90px auto;
+  margin: 0;
   color: black;
   /* background-color: violet; */
-  padding: 45px 45px;
+  padding: 20px auto;
   
   
 }
@@ -141,5 +148,10 @@ h2{
   font-size: large;
   text-align: center;
   align-items: center;
+  
+}
+
+footer{
+  text-align: left;
   
 }
