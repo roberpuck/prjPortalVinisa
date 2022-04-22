@@ -3,27 +3,30 @@ html{
 }
 body{
   background-color: white;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
 }
 header{
   background-color: rgb(0, 55, 86);
   color: white;
   width: 100%;
-  text-align: center;
-  align-items: center;
+  /* text-align: center; */
+  /* align-items: center; */
+  display: inline-flex;
         }
-header .logoHeader{
-  size: 75%;
-  display: inline-block;
-  margin: 0%;
+
+.logoHeader{
+  width: 25%;
 }
 
 header h1 {
+  size: auto;
    margin: 0;
    width: auto;
    font-size: 4rem;
-   text-align: center;
+   display: flex;
+   /* justify-content: center; */
+   /* text-align: justify; */
    align-items: center;
       }
 
@@ -32,26 +35,22 @@ header h1 {
 
 .contenedor-acordeones{
   margin: 0, 0;
+  display: inline-flex;
   text-align: center;
-}
-
-.acordeon-cuerpo{
-  margin: 0%;
-  padding-top: 0%;
 }
 
 /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
 
-.acordeon .contenedor {
-  margin: 0, auto;
-  width: 300px;
-  height: auto;
-  position: relative;
-  margin: 10px 2px;
-  /* background-color: blue; */
+.contenedor {
+
+  /* margin: 0, auto; */
+  /* width: 300px; */
+  /* height: auto; */
+  /* position: relative; */
+  /* margin: 10px 2px; */
+  background-color: blue;
   text-align: center;
-  
- 
+  align-items: center;
 }
 
 .acordeon {
@@ -71,7 +70,7 @@ header h1 {
 }
 
 .logoContenedor{
-  width: 50%;
+  width: 100%;
 }
 
 .acordeon .contenedor:hover{
@@ -134,18 +133,11 @@ header h1 {
   font-size: 30px;
 }
 
-.acordeon-cuerpo{
-  display: inline-flex;
-  text-align: center;
-}
 
-.acordeon-cuerpo2{
-  display: inline-flex;
-  text-align: center;
-}
 
 h2{
-  font-size: large;
+  position: top center;
+  font-size: x-large;
   text-align: center;
   align-items: center;
   
